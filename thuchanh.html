@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thuc hanh bai 24  </title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* HEADER */
+        .header{
+            width: 100%;
+            height: 8vh;
+            background-color: white;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            z-index: 1; 
+            
+        }
+        .nav1 li, .nav2 li{
+            display: inline-block;
+            font-size: 20px ;
+            margin: 6px 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .header .nav2 li a{
+            margin: 0 15px;
+        }
+        .header .nav1 li a{
+            margin: 0 10px;
+        }
+        .nav1 a, .nav2 a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav1 a:hover {
+            color: white;
+            background-color: teal;
+        }
+       
+        .nav1 a, .nav2 a{
+            width: 150px;
+            display: block;
+            line-height: 6vh;
+            text-align: center;
+        }
+
+        .nav2 a:hover {
+            color: white;
+            background-color: teal;
+        }
+
+        .img_header{
+            width: 100%;
+            padding-top: 8vh;
+        }
+
+        .img_header{
+
+        }
+
+        .img_content .Projects{
+            margin: 20px;
+        }
+        .img01,
+        .About_text, .About, .input_contact,
+        .map
+            {
+                padding: 20px;
+            }
+         .img01{
+        position: relative;
+      }
+            h3
+            {
+            position: absolute;
+            padding: 8px;
+            background-color: black;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .img01{
+                position: relative;
+            }
+            h2{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+     
+                    .button_contact{
+                        width: 100%;
+                        padding:8px;
+                        background-color: #ccc;
+                        color: white;
+                        border: 1px solid white;
+                        font-size: 20px;
+                    }
+                    .button_contact:hover{
+                        background-color:teal;
+                    }
+                    .p_input{
+                        padding: 15px 0;
+                    }
+                    .input_contact01, .button_send{
+                        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-size: 20px;
+                        width: 100%;
+                        padding: 8px;
+                        margin: 5px 0;
+                        border: 1px solid #ccc;
+                    }
+                    .input_contact01:hover{
+                        border: 2px solid teal;
+                    }
+                    .button_send{
+                        background-color: #ccc;
+                        color: black;
+                        width: 170px;
+                        padding: 5px;
+                    }
+                    .button_send:hover{
+                        color: white;
+                        background-color:teal;
+                    }
+                    .button_send{
+                        margin-top: 30px;
+                    }
+                    .map{
+                        margin-bottom: 10px;
+                    }
+                    .footer{
+                        -height: 10vh;
+                        clear: both;
+                        background-color: #000;
+                        color: white;
+                        text-align: center;
+                        padding: 30px;
+                    }
+                    .footer a{
+                        color: white;     
+                    }
+
+                    /* dien thoai */
+        @media only screen and (min-width:500px){
+            .img_content{
+                width: 100%;
+            }
+            .header .nav2{
+                display: none;
+            }
+            .header li a{
+                color: black;
+            }
+            .header{
+                background-color: white; 
+            }
+        }
+        /* TABLET */
+        @media only screen and (min-width:600px){
+            .img01, .About{
+                width: 50%;
+                float: left;
+                padding:20px;
+                box-sizing: border-box;
+            } .header .nav2{
+                display: block;
+                margin: 0 10px;
+            }
+
+            .header .nav2 li a{
+            margin: 0 -15px;
+        }
+        }
+         /* PC */
+         @media only screen and (min-width:1024px){
+            .img01, .About{
+                width: 25%;
+                float: left;
+                padding:20px;
+                box-sizing: border-box;                
+            }
+
+            .header .nav2{
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <ul class="nav1">
+                <li><a href="#"><strong>BR</strong> Architects</a></li>
+            </ul>
+            <ul class="nav2">
+                    <li><a href="project">P r o j e c t s</a></li>
+                    <li><a href="about">A b o u t</a></li>
+                    <li><a href="contact">C o n t a c t</a></li>
+            </ul>
+        </div>
+        <div class="img_header">
+            <img src="https://www.w3schools.com/w3images/architect.jpg" width="100%" alt="anh loi">
+            <br id="Projects_id" >
+
+        </div>
+        
+        <div class="img_content">
+            <div class="Projects">
+                <br>
+                <h2 >Projects</h2>
+            </div>
+            <div class="img_projects">
+            <div class="img01">
+                <h3>Summer House</h3>
+                <img  src="https://www.w3schools.com/w3images/house5.jpg" width="100%" height="." alt="loi">       
+            </div>
+            <div class="img01">
+                <h3>Brick House</h3>
+                <img src="https://www.w3schools.com/w3images/house2.jpg" width="100%" height="." alt="anh loi">
+            </div>
+            <div class="img01">        
+                <h3>Renovated</h3>
+                <img src="https://www.w3schools.com/w3images/house3.jpg" width="100%" height="." alt="Anh loi">
+        
+            </div>
+            <div class="img01">
+                <h3>Barn House</h3>
+                <img  src="https://www.w3schools.com/w3images/house4.jpg" width="100%" height="." alt="Anh loi">
+                <br  id="About_id">
+            <br>
+            </div>
+            
+        </div >
+        
+        <div class="About_item" >
+
+            <div  class="About_text">
+
+                <h2>About</h2>
+                <br>
+                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </div>
+
+        <div class="About">
+            <img src="https://www.w3schools.com/w3images/team2.jpg" width="100%" height="." alt="anh loi">
+            <h2>John Doe</h2>
+            <br>
+            <p>CEO & Founder</p>
+            <br>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <br>
+            <button class="button_contact">Contact</button>
+            </div>
+
+            <div class="About">
+                <img src="https://www.w3schools.com/w3images/team1.jpg" width="100%" height="." alt="anh loi">
+                <h2>Jane Doe</h2>
+                <br>
+                <p>Architect</p>
+                <br>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <br>
+                <button class="button_contact">Contact</button>
+                </div>
+
+                <div class="About">
+                    <img src="https://www.w3schools.com/w3images/team3.jpg" width="100%" height="." alt="anh loi">
+                    <h2>Mike Ross</h2>
+                    <br>
+                    <p>Architect</p>
+                    <br>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <br>
+                    <button class="button_contact">Contact</button>
+                    </div>
+        
+                <div class="About">
+                    <img src="https://www.w3schools.com/w3images/team4.jpg" width="100%" height="." alt="anh loi">
+                    <h2>Dan Star</h2>
+                    <br>
+                    <p>Architect</p>
+                    <br>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <br>
+                    <button id="Contact_id" class="button_contact">Contact</button>
+                    </div>
+
+                    <div class="input_contact">
+                        <h2 >Contact</h2>
+                        <br>
+                        <p  class="p_input">Lets get in touch and talk about your next project.</p>
+                        <input  class="input_contact01" type="text" name="name" placeholder="Name">
+                        <br>
+                        <input class="input_contact01" type="email" name="name" placeholder="Email">
+                        <br>
+                        <input class="input_contact01" type="text" name="name" placeholder="Subject">
+                        <br>
+                        <input class="input_contact01" type="text" name="name" placeholder="Comment">
+                        <br>
+                        <button class="button_send">SEND MESSAGE</button>
+                        </div>
+
+                        <div class="map">
+                            <img src="https://www.w3schools.com/w3images/map.jpg" width="100%" height="." alt="">
+                            </div>
+                            <div class="footer">
+                            <p>Powered by <a href="...">dinhvantin.vn</a></p>
+                            </div>
+         </div>
+    </div>
+</body>
+</html>
